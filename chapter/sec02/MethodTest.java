@@ -1,3 +1,4 @@
+package chapter.sec02;
 import java.sql.Date;
 
 public class MethodTest {
@@ -27,7 +28,14 @@ public class MethodTest {
     }
     // 
     public String polyLetter(int num) {
-        String res2 ="";
+        String res2 = num+"";
+
+        //String[] array = new.polyLetter(""); 
+
+        //  for(int i=0;i<array.length;i++) {
+        //     System.out.println(array[i]); 
+        //     } 
+        
         // 숫자 ==> 문자 : 숫자 +""
         // 문자열을 낱자로 쪼개는법 " 365" ==> "3", "6","5"
         // 문자열의 수만큼 배열을만들고 그배열에 "365".subString(0,1)
@@ -44,8 +52,8 @@ public class MethodTest {
         displaySijak();
         test.run();
        System.out.println(test.getDate());
-       System.out.println(test.getLetter(01));
-       System.out.println(test.polyLetter(01));
+       System.out.println(test.getLetter(11));
+       
       
 
     }

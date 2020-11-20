@@ -1,5 +1,4 @@
 public class ScoreEEEx implements Comparable<ScoreEEEx> {
-
     String name;
     int kor;
     int eng;
@@ -31,8 +30,17 @@ public class ScoreEEEx implements Comparable<ScoreEEEx> {
     public int compareTo(ScoreEEEx m) {
         int total1 = this.kor+this.eng+this.math;
         int total2 = m.kor+m.eng+ m.math;
-       
-        return total1-total2;
+        int e = this.math;
+        int g = m.math;
+        if(total1 == total2){
+            return g-e;
+        // }else if(total1 < total2){
+        //     return -1;
+        // }else{
+        //     return ret;
+        }else{
+            return 0;
+        }
 
     }
 

@@ -1,5 +1,11 @@
 public class MyException extends Exception{
-    public MyException() {}
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
+
+    public MyException() {
+    }
     public MyException(String msg){
         super(msg);
     }

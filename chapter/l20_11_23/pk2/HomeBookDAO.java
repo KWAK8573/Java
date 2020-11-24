@@ -59,7 +59,7 @@ public class HomeBookDAO implements IDao<HomeBook,Long>{
 	}
 
 	@Override
-	public HomeBookDAO select(Long key) throws SQLException {
+	public HomeBook select(Long key) throws SQLException {
 		String sql = "SELECT * FROM HOMEBOOK WHERE SERIALNO = ?";
 		Connection conn = ConnectionFactory.create();
 		PreparedStatement pstmt = conn.prepareStatement(sql);
@@ -96,8 +96,8 @@ public class HomeBookDAO implements IDao<HomeBook,Long>{
 			vo.setRevenue(rs.getLong(6));
 			vo.setExpense(rs.getLong(7));
 			data.add(vo);
+		}
 		return data;
-	}
 	}
 }
 

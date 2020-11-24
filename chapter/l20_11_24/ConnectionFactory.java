@@ -1,8 +1,11 @@
-package chapter.l20_11_23.pk2;
+package chapter.l20_11_24;
+// 1~2단계를 거쳐 만들어지는 커넥션 객체를
+
+// 리턴시켜주는 커넥션 공장
 
 import java.sql.*;
 
-public class CF {
+public class ConnectionFactory {
     // 외부에서 접근 못하고, 한개만 만든다.
     private static Connection conn = null;
     // synchronized - 쓰레드가 다중 동시 접근시 순서 세우기 작업 (동기화)

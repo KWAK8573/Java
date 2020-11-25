@@ -37,10 +37,10 @@ public class TestMain {
     public void testOfInsert(){
         MyMemberDAO dao = new MyMemberDAO();
         MyMember2 vo = new MyMember2();
-        vo.setId("BDA");
+        vo.setId("Aba");
         vo.setDay(new Timestamp(System.currentTimeMillis()));
         vo.setPassword("1234");
-        vo.setPhone("01000000044");
+        vo.setPhone("0100000004");
         vo.setIswithrew(0L);
         
         try {
@@ -59,7 +59,7 @@ public class TestMain {
         TestMain main = new TestMain();
         //main.testOfselectAll();
         //main.testOfDelete();
-        main.testOfInsert();
+       main.testOfInsert();
 
     }
     

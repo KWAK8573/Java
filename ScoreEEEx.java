@@ -28,21 +28,23 @@ public class ScoreEEEx implements Comparable<ScoreEEEx> {
     }
     @Override
     public int compareTo(ScoreEEEx m) {
-        int total1 = this.kor+this.eng+this.math;
-        int total2 = m.kor+m.eng+ m.math;
-        int e = this.math;
-        int g = m.math;
-        if(total1 == total2){
-            return g-e;
-        // }else if(total1 < total2){
-        //     return -1;
-        // }else{
-        //     return ret;
-        }else{
-            return 0;
+        int t1 = this.kor+this.eng+this.math;
+        int t2 = m.kor+m.eng+ m.math;
+        int a = 0;
+        if (t1 < t2) {
+            a = 1;
+        } else if (t1 > t2) {
+            a = -1;
+        } else {
+        if (this.math < m.math) {
+            a = 1;
+
+        } else {
+
+            a = -1;
+            }
         }
 
+        return a;
+        }
     }
-
-    
-}

@@ -61,7 +61,7 @@ public class TestMain {
 		try {
 			int res = dao.update(vo);
 			if (res>=1) {
-				System.out.println("자료를 잘 수정 하였습니다.");
+				System.out.println("자료를 잘 수정 ma하였습니다.");
 			}else {
 				System.out.println("수정불가");
 			}

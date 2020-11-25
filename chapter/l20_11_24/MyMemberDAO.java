@@ -11,7 +11,7 @@ public class MyMemberDAO implements IDao<MyMember2, Long> {
 
     @Override
     public int insert(MyMember2 vo) throws SQLException {
-       String sql = "insert IGNORE into mymember2 (MYNO,ID,DAY,PASSWORD,PHONE,ISWITHREW)" + " values(MYMEMBER2_SEQ.NEXTVAL,?,?,?,?,?)";
+       String sql = "insert into mymember2 (MYNO,ID,DAY,PASSWORD,PHONE,ISWITHREW)" + " values(MYMEMBER2_SEQ.NEXTVAL,?,?,?,?,?)";
        Connection conn = ConnectionFactory.create();
        PreparedStatement psmt = conn.prepareStatement(sql);
        psmt.setString(1, vo.getId());

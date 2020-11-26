@@ -1,0 +1,38 @@
+package chapter.l20_11_26;
+
+public class BookVO {  
+	private long bookid;
+    private String bookname;
+    private String publisher;
+    private int price;
+	
+	public long getBookid() {
+		return bookid;
+	}
+	public void setBookid(long bookid) {
+		this.bookid = bookid;
+	}
+	public String getBookname() {
+		return bookname;
+	}
+	public void setBookname(String bookname) {
+		this.bookname = bookname;
+	}
+	public String getPublisher() {
+		return publisher;
+	}
+	public void setPublisher(String publisher) {
+		this.publisher = publisher;
+	}
+	public int getPrice() {
+		return price;
+	}
+	public void setPrice(int price) {
+		this.price = price;
+	}
+    @Override
+	public String toString() {
+		return "BookVO [bookid=" + bookid + ", bookname=" + bookname + ", price=" + price + ", publisher=" + publisher
+				+ "]";
+	}
+}

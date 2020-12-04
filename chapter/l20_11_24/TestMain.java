@@ -16,7 +16,6 @@ public class TestMain {
                 System.out.println(x);
             }
         } catch (SQLException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
     }
@@ -51,7 +50,6 @@ public class TestMain {
                 System.out.println("입력실패");
             }
         } catch (SQLException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
     }
